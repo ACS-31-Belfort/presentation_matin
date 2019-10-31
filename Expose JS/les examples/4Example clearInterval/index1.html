@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SetInterval</title>
+</head>
+
+<body>
+
+  <div id="monHorloge"></div>
+
+  <hr>
+
+  <button onclick="stopBtn();">Stop</button>
+
+  <script type="text/javascript">
+    function Horloge() {
+      var dt = new Date();
+      document.getElementById("monHorloge").innerHTML = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+    }
+
+    var timer = setInterval("Horloge()", 250);
+
+    function stopBtn() {
+      clearTimeout(timer);
+    }
+  </script>
+
+
+
+
+</body>
+
+</html>

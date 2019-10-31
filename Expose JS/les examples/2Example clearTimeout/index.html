@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>SettImeout</title>
+</head>
+
+<body>
+
+	<div id="d1"></div>
+
+	<hr>
+	<button onclick="stopBtn();">Stop</button>
+
+	<script>
+
+		function createBtn() {
+			window.d1.innerHTML += ("** Access code school** 1  ** ");
+		}
+
+		var myBtn = setTimeout(createBtn, 5000);
+
+		setTimeout(function () {
+			window.d1.innerHTML += " ** Bonjour **  2";
+		}, 2000);
+
+		function stopBtn() {
+			clearTimeout(myBtn);
+		}
+	</script>
+
+
+</body>
+
+</html>
