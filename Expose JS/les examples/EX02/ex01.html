@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="monHorloge">...</div>
+<script type="text/javascript">
+ function Timer() {
+   var dt=new Date()
+   document.getElementById("monHorloge").innerHTML=dt.getHours()+":"+dt.getMinutes()+":"+dt.getSeconds();
+   setTimeout("Timer()",900);
+     console.log("Exécution de Timer()");
+   }
+  Timer();
+</script>
+</body>
+</html>
