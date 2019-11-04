@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ex02 setTimeout</title>
+</head>
+<body>
+
+	<button onclick="delayedAlert();">
+  	Affiche une alerte après deux secondes
+	</button>
+
+<p></p>
+
+<button onclick="clearAlert();">
+  Annuler l'alerte avant qu'elle ne se déclenche
+</button>
+
+<script>
+	
+var timeoutID;
+
+function delayedAlert() {
+
+  timeoutID = window.setTimeout(slowAlert, 200);
+
+}
+
+function slowAlert() {
+  alert("C'était long…");
+}
+
+function clearAlert() {
+  window.clearTimeout(timeoutID);
+}
+
+</script>
+</body>
+</html>

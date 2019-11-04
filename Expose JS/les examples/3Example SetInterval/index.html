@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<body>
+  <p>Acces Code School</p>
+
+  <button onclick="stopColor()">Stop</button>
+
+  <script>
+    
+    var myVar = setInterval(setColor, 100);
+
+    function setColor() {
+      var x = document.body;
+      x.style.backgroundColor =
+
+
+        x.style.backgroundColor == "yellow" ? "pink" : "yellow";
+    }
+
+    function stopColor() {
+      clearInterval(myVar);
+    }
+  </script>
+</body>
+
+</html>

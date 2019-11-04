@@ -1,0 +1,17 @@
+img{
+
+	left: 30px;
+	top: 30px;
+	width: 200px;
+	height: 100px;
+	position: relative;
+	
+}
+
+body{
+
+	display : flx ;
+		align-itemes:flex-start; 
+		justify-content:flex-start;
+		
+}

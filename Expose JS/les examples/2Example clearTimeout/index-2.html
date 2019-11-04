@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SettImeout</title>
+</head>
+<body>
+
+	<div id="d1"></div>
+    
+    <hr>
+
+     <button onclick="createBtn();">Start</button>
+     <button onclick="stopBtn();">Stop</button>
+	 
+	
+	<script >
+			
+			var myBtn;
+
+	    function createBtn(){
+	    	window.d1.innerHTML +=  "<button >Access code school</button>" ;
+
+	    	 myBtn = setTimeout(createBtn,1000);
+	    }
+
+       setTimeout(function(){
+       	window.d1.innerHTML += "Bonjour";
+        } ,2000);
+
+
+        function stopBtn(){
+        	clearTimeout(myBtn);
+        }
+
+	</script>
+
+
+</body>
+</html>
