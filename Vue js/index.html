@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <!-- données texte brut -->
+        <!-- {{ message }} -->
+
+        <!-- attribut v-bind -->
+        <!-- <div>
+            <a v-bind:href="link"> {{ message }} </a>
+        </div> -->
+
+        <!-- attribut v-for -->
+        <!-- <ul>
+            <li v-for="test in frameworks">{{ test }}</li>
+        </ul> -->
+
+        <!-- attributs v-if et v-on -->
+        <div v-if="success">
+            <button v-on:click="close">Fermer</button>
+            {{ message }}
+        </div>
+
+        <!-- attribut v-show -->
+        <h1 v-show="ok">Bonjour !</h1>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
