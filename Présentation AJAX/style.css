@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    margin: 1000px 0 80px 0;
+    font-family: 'Muli', sans-serif;
+    background-color: rgb(173, 180, 197);
+}
+
+.msg {
+    color: green;
+}
+
+.error {
+    color: red;
+}
